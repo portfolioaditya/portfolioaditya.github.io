@@ -1,0 +1,32 @@
+{
+  "name": "animation-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Aditya Gupta research portfolio",
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/manrope": "^5.3.0",
+    "@gsap/react": "^2.1.2",
+    "@react-three/fiber": "^9.7.0",
+    "gsap": "^3.15.0",
+    "lucide-react": "^1.43.0",
+    "motion": "^13.2.0",
+    "next": "^16.3.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@types/three": "^0.185.4",
+    "typescript": "^7.0.2"
+  },
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build --webpack",
+    "typecheck": "tsc --noEmit"
+  }
+}
