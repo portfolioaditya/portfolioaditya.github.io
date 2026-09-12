@@ -1,0 +1,5 @@
+import { ArrowUpRight, ArrowDown } from 'lucide-react';
+import { profile } from '@/lib/content';
+export default function ContactContent() {
+  return <div className="contact-content"><div className="contact-email-block"><span className="eyebrow">EMAIL</span><a href={`mailto:${profile.email}`} className="contact-email">{profile.email}<ArrowUpRight /></a><p>For academic opportunities and collaborations in sustainable and smart packaging.</p></div><div className="contact-links">{profile.socials.filter(s => s.title !== 'Email').map((social, i) => <a key={social.title} href={social.href} target="_blank" rel="noreferrer" className="contact-link" data-reveal><span className="mono">0{i + 1}</span><span><strong>{social.title}</strong><small>{social.title === 'ORCID' ? social.label : social.title === 'LinkedIn' ? 'Professional profile' : 'Research profile'}</small></span><ArrowUpRight /></a>)}</div><div className="contact-cv"><p>My academic background, in one document.</p><a href={profile.cv} download className="button button-primary" data-magnetic>Download CV <ArrowDown size={18} /></a></div></div>;
+}
